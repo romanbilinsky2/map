@@ -113,7 +113,7 @@
             function init() {
                 Tabletop.init({
                     // YOUR TURN: change 'key' value to point to your spreadsheet
-                    key: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRSBDjvQM4-FFSJ_inJ7MFxvAp7K0APjGutVm4gorzz0817Pgd2g55jQLwMxvq1xSl-GFipEbvKH98H/pub?gid=0&single=true&output=csv',
+                    key: 'https://docs.google.com/spreadsheets/d/1uGQhTxuJk-s742_QGYNX1eWTS859S1rpVR1gGm-Iq5k/',
                     // once Tabletop has loaded the data, it passes it to the 'callback' function, 'addPoints', defined below
                     callback: addPoints,
                     simpleSheet: true
@@ -122,11 +122,11 @@
 
 
             // create a function called addPoints that iterates through your table (row by row) to create markers and popups
-            function addPoints(data-data) {
+            function addPoints(data) {
 
                 // iterate through your table to set the marker to lat/long values for each row
 
-                data-data.forEach(function (row) {
+                data.forEach(function (row) {
 
                     var popupText = `<h3>` + row.Name + `</h3>` + '<h4>' + '<b>' + 'Address: ' + '</b>' + row.Address + '</h4>' + '<h4>' + '<b>' + 'Phone: ' + '</b>' + row.Phone + '</h4>';
                     var donationLink = `<h4><a href="${row["Donation Link"]}">Donate</a></h4>`;
