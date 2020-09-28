@@ -95,10 +95,10 @@
             };
 
             //YOUR TURN: add your Mapbox access token
-            mapboxgl.accessToken = 'pk.eyJ1IjoiZGF2aWQtd2lja3MiLCJhIjoiY2s4c3Y2bGcwMDBiODNmcXF3a3psbmxtayJ9.q7os8l9ONL-EDP0BhHuIpQ';
+            mapboxgl.accessToken = 'pk.eyJ1Ijoicm9ta29ib21rbzEyMyIsImEiOiJja2ZlZHplNHYwNDByMzRtbmQ2OXh5b3ZlIn0.e-uOwIZUfL3h7NcbonItcQ';
             var map = new mapboxgl.Map({
                 container: 'map', // container id
-                style: "mapbox://styles/david-wicks/ck8t593td02e61img161ked60", //YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
+                style: "mapbox://styles/romkobomko123/ckfeecwfy07d61atf2u12h6wr", //YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
                 center: [-122.411464, 37.7852299], // starting position [lng, lat]
                 zoom: 9, // starting zoom
                 transformRequest: transformRequest
@@ -113,7 +113,7 @@
             function init() {
                 Tabletop.init({
                     // YOUR TURN: change 'key' value to point to your spreadsheet
-                    key: 'https://docs.google.com/spreadsheets/d/1uGQhTxuJk-s742_QGYNX1eWTS859S1rpVR1gGm-Iq5k/',
+                    key: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRSBDjvQM4-FFSJ_inJ7MFxvAp7K0APjGutVm4gorzz0817Pgd2g55jQLwMxvq1xSl-GFipEbvKH98H/pub?gid=0&single=true&output=csv',
                     // once Tabletop has loaded the data, it passes it to the 'callback' function, 'addPoints', defined below
                     callback: addPoints,
                     simpleSheet: true
