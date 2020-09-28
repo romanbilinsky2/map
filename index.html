@@ -122,11 +122,11 @@
 
 
             // create a function called addPoints that iterates through your table (row by row) to create markers and popups
-            function addPoints(data) {
+            function addPoints(data-data) {
 
                 // iterate through your table to set the marker to lat/long values for each row
 
-                data.forEach(function (row) {
+                data-data.forEach(function (row) {
 
                     var popupText = `<h3>` + row.Name + `</h3>` + '<h4>' + '<b>' + 'Address: ' + '</b>' + row.Address + '</h4>' + '<h4>' + '<b>' + 'Phone: ' + '</b>' + row.Phone + '</h4>';
                     var donationLink = `<h4><a href="${row["Donation Link"]}">Donate</a></h4>`;
